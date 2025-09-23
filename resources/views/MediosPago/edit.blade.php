@@ -48,8 +48,6 @@ Editar Medio de Pago
                     @enderror
                 </div>
                 <Button type="submit" class="btn btn-outline-dark">Actualizar</Button>
-                <a href="{{route('mediospago.index')}}" class="btn btn-outline-secondary rounded-pill px-4"> Volver </a>
-                
             </div>
 
 

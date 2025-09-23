@@ -122,8 +122,6 @@
                                 <option value="1">inactivo</option>
                             </select>
                                 @error('estado')
-                                <div class="invalid-feedback">{{$message}}</div>
-                                @enderror
                         </div>
 
 
