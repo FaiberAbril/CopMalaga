@@ -25,7 +25,7 @@ Editar Medio de Pago
                 <a href="{{route('mediospago.index')}}" class="btn btn-outline-secondary rounded-pill px-4"> Volver </a>
 
 
-            <div class="d-fex flex-column form shadow">
+            <div class="d-fex flex-column form shadow" >
                 <h2>Actualizar medio de pago</h2>
                 <div class="mb-3">
                     <label for="medio_pago" class="form-label ">Medios de pago</label>
