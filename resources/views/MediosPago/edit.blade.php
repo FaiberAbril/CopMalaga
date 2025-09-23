@@ -17,9 +17,13 @@ Editar Medio de Pago
         <form action="{{ route('mediospago.update', $medioPago->id) }}" class="d-flex justify-content-center align-items-center min-vh-100 " method="POST">
             @csrf
             <div>
+                
 
                 <img src="" alt="">
             </div>
+                 <div class="mb-4 text-start">
+                <a href="{{route('mediospago.index')}}" class="btn btn-outline-secondary rounded-pill px-4"> Volver </a>
+
 
             <div class="d-fex flex-column form shadow">
                 <h2>Actualizar medio de pago</h2>
