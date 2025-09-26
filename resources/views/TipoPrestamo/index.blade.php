@@ -48,10 +48,10 @@
                     <tbody>
                         @forelse ($tipoprestamo as $prestamo)
                             <tr>
-                                <td>{{ $prestamo->id }}</td>
-                                <td>{{ $prestamo->nombre }}</td>
-                                <td>{{ $prestamo->descripcion }}</td>
-                                <td>{{ $prestamo->intereses }}</td>
+                                <td>{{ $prestamo-> id }}</td>
+                                <td>{{ $prestamo-> nombre }}</td>
+                                <td>{{ $prestamo-> descripcion }}</td>
+                                <td>{{ $prestamo-> intereses }}</td>
                                 <td>
                                     <div class="d-flex justify-content-center gap-2">
                                         <a  href="" class="btnActualizar d-flex gap-2">
