@@ -42,12 +42,12 @@
                              @error('')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
-                        </div>
+                         </div>
                       
 
 
 
-                  <div class="mb-4">
+                   <div class="mb-4">
                            <label class="form-label">Descripción</label>
                           <input class="form-control @error('') is-invalid @enderror" type="text" name="descripción"
                            id="descripción" placeholder="Ingrese una descripción">
@@ -56,12 +56,12 @@
                         <div class="invalid-feedback">{{$message}}</div>
                     @enderror
                   
-                  </div>
+                   </div>
 
 
                   <div class="mb-3">
                             <label for="intereses" class="form-label">Intereses</label>
-                            <select class="form-select @error('descripcion') is-invalid @enderror"  name="intereses" id="intereses">
+                            <select class="form-select @error('') is-invalid @enderror"  name="intereses" id="intereses">
                                 <option value="15% – 30% anual">15% – 30% anual</option>
                                 <option value=" 8% – 15% anual"> 8% – 15% anual</option>
                                 <option value="10% – 20% anual">10% – 20% anual</option>
@@ -69,9 +69,7 @@
                                 <option value="12% – 25% anual">12% – 25% anual</option>
                                 <option value="18% – 28% anual">18% – 28% anual</option>
                                 <option value="12% – 22% anual">12% – 22% anual</option>
-                                <option value="20% – 35% anual">20% – 35% anual
-                                    
-                                </option>
+                                <option value="20% – 35% anual">20% – 35% anual</option>
 
                                  @error('')
                         <div class="invalid-feedback">{{$message}}</div>
@@ -81,18 +79,12 @@
         
                         </div>
 
-                <div>
+                      <div>
 
                     <Button type="submit" class="btnCrearMedioPago">Crear</Button>
                 </div>
+               </div>
+              </form>
+              </div>
 
-
-            </div>
-
-
-        </form>
-
-
-    </div>
-
-@endsection
+            @endsection
