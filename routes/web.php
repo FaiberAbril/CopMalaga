@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\clientesController;
 use App\Http\Controllers\MedioPagoController;
 use App\Http\Controllers\TipoPrestamoController;
-
+use App\Http\Controllers\PrestamosController;
 use App\Http\Controllers\EstadoPrestamoController;
 
 
@@ -46,3 +46,11 @@ Route::post('/estadoprestamo/store', [EstadoPrestamoController::class, 'store'])
 Route::get('/estadoprestamo/edit/{id}', [EstadoPrestamoController::class, 'edit'])->name('estadoprestamo.edit');
 Route::post('/estadoprestamo/update/{id}', [EstadoPrestamoController::class, 'update'])->name('estadoprestamo.update');
 Route::post('/estadoprestamo/destroy/{id}', [EstadoPrestamoController::class, 'destroy'])->name('estadoprestamo.destroy');
+
+// Rutas para Prestamos
+Route::get('/prestamos/index',[PrestamosController::class, 'index'])->name('prestamos.index');
+Route::get('/prestamos/create',[PrestamosController::class, 'create'])->name('prestamos.create');
+Route::post('/prestamos/store',[PrestamosController::class, 'store'])->name('prestamos.store');
+Route::get('/prestamos/edit/{id}',[PrestamosController::class, 'edit'])->name('prestamos.edit');
+Route::post('/prestamos/update/{id}',[PrestamosController::class, 'update'])->name('prestamos.update');
+Route::post('/prestamos/destroy/{id}',[PrestamosController::class, 'destroy'])->name('prestamos.destroy');

@@ -7,6 +7,7 @@ use App\Models\clientes;
 use Illuminate\Http\Request;
 
 class clientesController extends Controller
+
 {
     /**
      * Display a listing of the resource.
